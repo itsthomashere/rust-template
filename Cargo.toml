@@ -1,0 +1,19 @@
+[package]
+name = "ascii-web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+askama = {version = "0.12.1", features = ["with-axum"] }
+askama_axum = {version = "0.4.0", features = ["serde-json"]}
+aws-sdk-config = {version = "1.46.0", features = ["behavior-version-latest"] }
+aws-sdk-s3 = {version = "1.52.0", features = ["behavior-version-latest"] }
+axum = { version = "0.7.7", features = ["multipart"] }
+hyper = { version = "1.4.1", features = ["full"] }
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = { version = "1.0.128", features = [] } 
+tokio = { version = "1.40.0", features = ["full"] }
+tower = {version = "0.5.1", features = []}
+tower-http = {version = "0.6.1", features = ["trace"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
